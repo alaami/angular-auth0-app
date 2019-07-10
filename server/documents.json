@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Doc 1",
+    "source": "Document Intro"
+  },
+	{
+    "id": 2,
+    "name": "Doc 2",
+    "source": "Document analyse"
+	},
+  {
+    "id": 3,
+    "name": "Doc 3",
+    "source": "Document Conclusion"
+	}
+]

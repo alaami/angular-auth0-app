@@ -1,0 +1,19 @@
+<h1>Angular8 Avec Auth0</h1>
+
+<div *ngIf="!auth.isAuthenticated">
+  <button (click)="auth.login()">Connexion</button>
+</div>
+
+<div *ngIf="auth.isAuthenticated && auth.userInfo as user">
+  <p>Hello, <a routerLink="/profile" href>{{ user.name }}</a>!</p>
+  <button (click)="auth.logout()">Déconnexion</button>
+
+  <div *ngIf="(dragons$ | async) as dragons">
+    <h2>Ressources Documents</h2>
+    <ul>
+      <li *ngFor="let dragon of dragons">
+        {{ dragon.name }} - {{ dragon.source }}
+      </li>
+    </ul>
+  </div>
+</div>
