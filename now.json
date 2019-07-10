@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "Auth0-app",
+  "name": "angular-auth0-app",
   "github": {
   "autoAlias": false
   },
